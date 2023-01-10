@@ -1,10 +1,12 @@
 export const teacherItems = [
   {
-    firstName: "Michael",
-    lastName: "Gustavsson",
+    firstName: "KupongKalle",
+    lastName: "Sandslott",
+    id: 1,
   },
   {
-    firstName: "Brandon",
+    firstName: "Abbe",
     lastN: "Cool",
+    id: 2,
   },
 ];
