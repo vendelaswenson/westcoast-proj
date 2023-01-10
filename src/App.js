@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import NotFound from './pages/NotFound';
+import LandingPage from './pages/LandingPage';
+import MainHeader from './components/MainHeader';
+import TeacherDetail from './pages/TeacherDetail';
+import CourseDetail from './pages/CourseDetail';
+import ContactUs from './pages/ContactUs';
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MainHeader />
+      <main>
+        <Routes>
+          <Route path="/" element={<LandingPage />}></Route>
+          <Route path="/landingpage" element={<LandingPage />}></Route>
+          <Route path="/teacher/:id" element={<TeacherDetail />}></Route>
+          <Route path="/course/:id" element={<CourseDetail />}></Route>
+          <Route path="/contact" element={<ContactUs />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+      </main>
     </div>
   );
 }
