@@ -7,5 +7,6 @@ describe("Component", () => {
   it("renders without crashing", async () => {
     const utils = render(<TeacherList />, {wrapper: MemoryRouter});
     expect(utils).toMatchSnapshot();
+    expect(utils).toBeTruthy();
   });
 });

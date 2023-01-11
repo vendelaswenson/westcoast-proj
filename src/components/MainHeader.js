@@ -6,7 +6,13 @@ const MainHeader = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/landingpage">Startsida</NavLink>
+            <NavLink to="/landingpage">Homepage</NavLink>
+          </li>
+          <li>
+            <NavLink to="/lists">Lists</NavLink>
+          </li>
+          <li>
+            <NavLink to="/add">Add teachers/courses</NavLink>
           </li>
           <li>
             <NavLink to="/contact">Contact</NavLink>
