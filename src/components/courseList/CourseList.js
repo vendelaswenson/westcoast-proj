@@ -1,5 +1,6 @@
 import { courseItems } from "../../__mocks__/courseItems";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const CourseList = () => {
   return (

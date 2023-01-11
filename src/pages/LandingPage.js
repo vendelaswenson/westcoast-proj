@@ -1,4 +1,4 @@
-import CourseList from "../components/courseList/courseList";
+import CourseList from "../components/courseList/CourseList";
 import TeacherList from "../components/teacherList/teacherList";
 
 const LandingPage = () => {

@@ -1,5 +1,6 @@
 import { teacherItems } from "../../__mocks__/teacherItems";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const TeacherList = () => {
   return (
