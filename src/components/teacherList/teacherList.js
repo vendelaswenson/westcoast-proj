@@ -8,8 +8,13 @@ const TeacherList = () => {
       <h3>Teachers:</h3>
       {teacherItems?.map((item) => (
         <div firstName={item.firstName} lastName={item.lastName}>
-          <Link to={`/teacher/${item.id}`}>
-            <div>{item.firstName}</div>
+          <Link to={`/teacher/${item.id}`} style={{ textDecoration: 'none' }}>
+            <h3>First name: {item.firstName}</h3>
+            <div>Last name:{item.lastName}</div>
+            <div>Social security number:{item.socialSecNum}</div>
+            <div>Email:{item.email}</div>
+            <div>Phone number: {item.phoneNum}</div>
+            <div>Competencies: {item.competentencies}</div>
           </Link>
         </div>
       ))}

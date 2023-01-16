@@ -9,7 +9,10 @@ const MainHeader = () => {
             <NavLink to="/landingpage">Homepage</NavLink>
           </li>
           <li>
-            <NavLink to="/lists">Lists</NavLink>
+            <NavLink to="/courselist">Course List</NavLink>
+          </li>
+          <li>
+            <NavLink to="/teacherlist">Teacher List</NavLink>
           </li>
           <li>
             <NavLink to="/add">Add teachers/courses</NavLink>

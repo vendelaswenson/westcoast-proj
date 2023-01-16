@@ -9,6 +9,18 @@ function AddTeacher() {
         <label>Teachers last name:
           <input type="text" />
         </label>
+        <label>Social security number:
+          <input type="number" />
+        </label>
+        <label>E-mail:
+          <input type="text" />
+        </label>
+        <label>Phone number:
+          <input type="number" />
+        </label>
+        <label>List of competencies:
+          <input type="text" />
+        </label>
         <button>Add</button>
       </form>
       </>

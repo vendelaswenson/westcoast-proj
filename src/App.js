@@ -6,7 +6,8 @@ import CourseDetail from './pages/CourseDetail';
 import ContactUs from './pages/ContactUs';
 import AddPage from './pages/AddPage';
 import { Routes, Route } from 'react-router-dom'
-import ListPage from './pages/ListPage';
+import CoursePage from './pages/CoursePage';
+import TeacherPage from './pages/TeacherPage';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route path="/teacher/:id" element={<TeacherDetail />}></Route>
           <Route path="/course/:id" element={<CourseDetail />}></Route>
           <Route path="/contact" element={<ContactUs />}></Route>
-          <Route path="/lists" element={<ListPage />}></Route>
+          <Route path="/courselist" element={<CoursePage />}></Route>
+          <Route path="/teacherlist" element={<TeacherPage />}></Route>
           <Route path="/add" element={<AddPage />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
