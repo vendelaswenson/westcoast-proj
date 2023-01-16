@@ -1,25 +1,16 @@
 
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import InfoContext from "../../store/info-context";
 import React from "react";
 
 const TeacherList = () => {
- const [teachers, setTeacher] = useState([])
-
-  useEffect(() => {
-    async function fetchData() {
-      await fetch('http://localhost:3010/teachers')
-      .then((response) => response.json()).then((data) => setTeacher(data)).catch(rejected => {
-              console.log(rejected);
-          });
-    }
-    fetchData();
-  }, []);
+  const context = useContext(InfoContext)
 
   return (
     <>
       <h3>Teachers:</h3>
-      {teachers?.map((item) => (
+      {context.teachers?.map((item) => (
         <div key={item.id}>
           <Link to={`/teacher/${item.id}`} style={{ textDecoration: 'none' }}>
             <h3>First name: {item.firstname}</h3>
