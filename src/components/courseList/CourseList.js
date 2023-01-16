@@ -19,7 +19,7 @@ const CourseList  =  () => {
     <>
       <h3>Courses:</h3>
       {courses?.map((item) => (
-        <div name={item.name} number={item.number}>
+        <div key={item.id}>
           <Link to={`/course/${item.id}`} style={{ textDecoration: 'none' }}>
             <h3>Name: {item.name}</h3>
             <div>Duration: {item.length} weeks</div>
