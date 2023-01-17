@@ -15,14 +15,13 @@ export const InfoContextProvider = (props) => {
         const data = await response.json()
         setTeachers(data)
     }
-    const fetchEducations = async()=>{
+    const fetchCourses = async()=>{
       const response = await fetch("http://localhost:3010/courses")
       const data = await response.json()
       setCourses(data)
-      console.log(data)
   }
   fetchTeachers()
-  fetchEducations()
+  fetchCourses()
   }, []);
 
 

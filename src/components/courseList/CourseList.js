@@ -1,27 +1,16 @@
-import { Link } from "react-router-dom";
-import { useContext } from "react";
-import InfoContext from "../../store/info-context";
+import { Link } from 'react-router-dom'
 import React from "react";
 
-
-const CourseList  =  () => {
-  const context = useContext(InfoContext)
-
+const CourseList  =  ({data}) => {
   return (
-    <>
-      <h3>Courses:</h3>
-      {context.courses?.map((item) => (
-        <div key={item.id}>
-          <Link to={`/course/${item?.id}`} style={{ textDecoration: 'none' }}>
-            <h3>Name: {item.name}</h3>
-            <div>Duration: {item.length} weeks</div>
-            <div>Description: {item.description}</div>
-            <div>Start date: {item.startDate}</div>
-          </Link> 
-        </div>
-      ))}
-    </>
-  );
+    <div className='courseContainer'>
+        <Link state={data} to={`/course/${data?.id}`}>
+      <h2>Course name: {data?.name}</h2>
+      <p>Course number: {data?.number}</p>
+    </Link>
+    </div>
+  
+  )
 }
 
 

@@ -1,27 +1,19 @@
-
-// import { useEffect, useState, useParams } from "react-router-dom";
-// import axios from 'axios'
+import { useLocation } from 'react-router-dom'
 
 const CourseDetail = () => {
 
-  // const { id } = useParams()
-  // const [course, setCourse] = useState('')
+  const { state } = useLocation();
 
-  // useEffect(() => {
-  //   axios
-  //     .get(`http://host/endpoint.json${id}`)
-  //     .then((response) => setCourse(response.data))
-  // }, [])
-
+console.log(state)
 
   return(
   <>
-  <h1>coursedtail</h1>
-  {/* <h2>{course?.name}</h2>
-  <div>{course?.number}</div>
-  <div>{course?.length}</div>
-  <div>{course?.description}</div>
-  <div>{course?.startDate}</div> */}
+  <h1>Course detail</h1>
+  <h2> Course name: {state?.name}</h2>
+  <p> Course number: {state?.number}</p>
+  <p> Length: {state?.length} weeks</p>
+  <p> Description: {state?.description}</p>
+  <p> Start date: {state?.startDate}</p>
 </>
   )
 };
