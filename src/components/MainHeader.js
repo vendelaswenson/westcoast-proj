@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import  ReactDOM  from "react-dom"
 import { Fragment, useState } from "react"
 import AddPage from "../pages/AddPage";
+import './MainHeader.css'
 
 const MainHeader = () => {
 
@@ -14,27 +15,27 @@ const MainHeader = () => {
   return (
     <header>
       <nav>
-        <ul>
-          <li>
-            <NavLink to="/landingpage">Homepage</NavLink>
+        <ul className="listelements">
+          <li className="listelement">
+            <Link to="/landingpage">Homepage</Link>
           </li>
-          <li>
-            <NavLink to="/courselist">Course List</NavLink>
+          <li className="listelement">
+            <Link to="/courselist">Course List</Link>
           </li>
-          <li>
-            <NavLink to="/teacherlist">Teacher List</NavLink>
+          <li className="listelement">
+            <Link to="/teacherlist">Teacher List</Link>
           </li>
-          <li onClick={clickHandler}>
+          <li onClick={clickHandler} className="listelement">
             Add teacher/course
-            {modal && <Fragment>
+          </li>
+          {modal && <Fragment>
         {ReactDOM.createPortal(
         <AddPage closeModal={setModal}/>,
         document.querySelector('#modal-root'),
       )}
       </Fragment>}
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
+          <li className="listelement">
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

@@ -1,0 +1,31 @@
+.listelements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    position: sticky;
+    z-index: 10;
+}
+
+.listelement {
+list-style: none;
+text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.listelement:hover {
+    font-size: 18.4px;
+} 
+
+@media screen and (max-width: 500px) {
+    .listelement, .listelements {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+  }

@@ -22,7 +22,7 @@
             "lastname": "Sandslott",
             "socialSecNum": 199901018886,
             "email": "kk@hotmail.com",
-            "phoneNum": 5768588585,
+            "phoneNum": "0768588585",
             "competentencies": "js4",
             "id": 1
           },
@@ -31,7 +31,7 @@
             "lastname": "Cool",
             "socialSecNum": 200501012345,
             "email": "abbe@outlook.com",
-            "phoneNum": 5768588585,
+            "phoneNum": "0768588585",
             "competentencies": "java",
             "id": 2
           }
