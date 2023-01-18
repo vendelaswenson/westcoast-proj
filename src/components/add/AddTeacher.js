@@ -1,8 +1,14 @@
 import { useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import InfoContext from '../../store/info-context';
+import React, { useContext} from 'react'
+
 
 
 function AddTeacher() {
+
+  const context = useContext(InfoContext);
+
   const firstNameInputRef = useRef();
   const lastNameInputRef = useRef();
   const socSecInputRef = useRef();
@@ -21,31 +27,22 @@ function AddTeacher() {
 
   const onSubmitHandler = (e) => {
 
-    const teacher = {
-      firstname: firstNameInputRef.current.value,
-      lastname: lastNameInputRef.current.value,
-      socialSecNum: socSecInputRef.current.value,
-      email: emailInputRef.current.value,
-      phoneNum : phoneInputRef.current.value,
-      competentencies: compentenceInputRef.current.value,
-      id: uuidv4()
-    };
+    let firstname = firstNameInputRef.current.value
+    let lastname = lastNameInputRef.current.value
+    let socialSecNum = socSecInputRef.current.value
+    let email = emailInputRef.current.value
+    let phoneNum = phoneInputRef.current.value
+    let competencies = compentenceInputRef.current.value
+    let id = uuidv4()
 
-    (async () => {
-      const rawResponse = await fetch('http://localhost:3010/teachers', {
-        method: 'POST',
-        body: JSON.stringify(teacher)
-      });
-      const content = await rawResponse.json();
+
+    const teacherBody = {
+      firstname, lastname, socialSecNum, email, phoneNum, competencies, id 
+    }
+
+    context.postTeacher(teacherBody)
     
-      console.log(content);
-    })();
-    clearForm();
   }
-
- 
-
-
 
   const onCancelClickHandler = (e) => {
     e.preventDefault();
