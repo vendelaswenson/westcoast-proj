@@ -1,7 +1,7 @@
 import TeacherList from "../components/teacherList/teacherList";
 import InfoContext from '../store/info-context';
 import React, { useContext} from 'react'
-import './teacher.css'
+import './styles/teacher.css'
 
 const TeacherPage = () => {
     const context = useContext(InfoContext);

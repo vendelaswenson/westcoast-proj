@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom'
-import './detail.css'
+import './styles/detail.css'
 
 const TeacherDetail = () => {
 

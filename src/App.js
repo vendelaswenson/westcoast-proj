@@ -1,6 +1,6 @@
 import NotFound from './pages/NotFound';
 import LandingPage from './pages/LandingPage';
-import MainHeader from './components/MainHeader';
+import MainHeader from './components/header/MainHeader';
 import TeacherDetail from './pages/TeacherDetail';
 import CourseDetail from './pages/CourseDetail';
 import ContactUs from './pages/ContactUs';

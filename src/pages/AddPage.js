@@ -1,8 +1,8 @@
 import AddTeacher from "../components/add/AddTeacher"
 import AddCourse from "../components/add/AddCourse"
-import './add.css';
+import './styles/add.css';
 
-function AddTeacherPage() {
+function AddPage() {
     return (
         <>
         <div className="modal-container">
@@ -13,4 +13,4 @@ function AddTeacherPage() {
     )
 }
 
-export default AddTeacherPage
+export default AddPage

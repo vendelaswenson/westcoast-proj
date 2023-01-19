@@ -1,10 +1,8 @@
 import { useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import InfoContext from '../../store/info-context';
-import React, { useContext, useState} from 'react'
-import './addcomp.css'
-
-
+import React, { useContext, useState} from 'react';
+import './addcomp.css';
 
 function AddTeacher() {
 

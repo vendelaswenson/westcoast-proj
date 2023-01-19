@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import  ReactDOM  from "react-dom"
 import { Fragment, useState } from "react"
-import AddPage from "../pages/AddPage";
+import AddPage from "../../pages/AddPage";
 import './MainHeader.css'
+import React from "react";
 
 const MainHeader = () => {
 

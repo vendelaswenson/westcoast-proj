@@ -5,59 +5,35 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h3>
-        Teachers:
-      </h3>
       <div
-        firstname="KupongKalle"
-        lastname="Sandslott"
+        class="courseContainer"
       >
         <a
-          href="/teacher/1"
+          href="/teacher/undefined"
         >
-          <div>
-            KupongKalle
-          </div>
-        </a>
-      </div>
-      <div
-        firstname="Abbe"
-      >
-        <a
-          href="/teacher/2"
-        >
-          <div>
-            Abbe
-          </div>
+          <h2>
+            Teacher firstname: 
+          </h2>
+          <h3>
+            Teacher lastname: 
+          </h3>
         </a>
       </div>
     </div>
   </body>,
   "container": <div>
-    <h3>
-      Teachers:
-    </h3>
     <div
-      firstname="KupongKalle"
-      lastname="Sandslott"
+      class="courseContainer"
     >
       <a
-        href="/teacher/1"
+        href="/teacher/undefined"
       >
-        <div>
-          KupongKalle
-        </div>
-      </a>
-    </div>
-    <div
-      firstname="Abbe"
-    >
-      <a
-        href="/teacher/2"
-      >
-        <div>
-          Abbe
-        </div>
+        <h2>
+          Teacher firstname: 
+        </h2>
+        <h3>
+          Teacher lastname: 
+        </h3>
       </a>
     </div>
   </div>,

@@ -5,61 +5,43 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h3>
-        Courses
-      </h3>
       <div
-        name="Js4"
-        number="12"
+        class="courseContainer"
       >
         <a
-          href="/course/1"
+          href="/course/undefined"
         >
-          <div>
-            Js4
-          </div>
-        </a>
-      </div>
-      <div
-        name="js3"
-        number="11"
-      >
-        <a
-          href="/course/2"
-        >
-          <div>
-            js3
-          </div>
+          <h2
+            class="course-name"
+          >
+            Course name: 
+          </h2>
+          <p
+            class="course-number"
+          >
+            Course number: 
+          </p>
         </a>
       </div>
     </div>
   </body>,
   "container": <div>
-    <h3>
-      Courses
-    </h3>
     <div
-      name="Js4"
-      number="12"
+      class="courseContainer"
     >
       <a
-        href="/course/1"
+        href="/course/undefined"
       >
-        <div>
-          Js4
-        </div>
-      </a>
-    </div>
-    <div
-      name="js3"
-      number="11"
-    >
-      <a
-        href="/course/2"
-      >
-        <div>
-          js3
-        </div>
+        <h2
+          class="course-name"
+        >
+          Course name: 
+        </h2>
+        <p
+          class="course-number"
+        >
+          Course number: 
+        </p>
       </a>
     </div>
   </div>,
