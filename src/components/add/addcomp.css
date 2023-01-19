@@ -1,0 +1,38 @@
+
+
+.teacher-form {
+    margin-top: 170px;
+    margin-bottom: 60px;
+    margin-left: 7%;
+}
+
+input[type=text] {
+    padding:6px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+
+  .course-container {
+    margin-bottom: 70px;
+  }
+
+  .btn {
+    appearance:none;
+  -webkit-appearance:none;
+  padding:10px;
+  border:none;
+  background-color:#3F51B5;
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+  width:70px;
+  cursor: pointer;
+  margin-right: 1%;
+  margin-top: 5%;
+  }
+
+  .add-h2 {
+    font-family: 'Merriweather', serif;
+  }

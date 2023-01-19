@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom'
+import './detail.css'
 
 const TeacherDetail = () => {
 
@@ -8,13 +9,17 @@ console.log(state)
 
   return(
   <>
+  <div className='detail-container'>
   <h1> Teacher details</h1>
+  <div className='info'>
   <h2> First name: {state?.firstname}</h2>
   <h3> Last name: {state?.lastname}</h3>
   <p> Social security number: {state?.socialSecNum}</p>
   <p> E-mail: {state?.email}</p>
   <p> Phone number: {state?.phoneNum}</p>
-  <p> Competencies: {state?.competentencies}</p>
+  <p> Competencies: {state?.competencies}</p>
+  </div>
+  </div>
 </>
   )
 };

@@ -1,11 +1,14 @@
 import { useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import InfoContext from '../../store/info-context';
-import React, { useContext} from 'react'
+import React, { useContext, useState} from 'react'
+import './addcomp.css'
 
 
 
 function AddTeacher() {
+
+  const [modal, setModal] = useState(true);
 
   const context = useContext(InfoContext);
 
@@ -45,14 +48,15 @@ function AddTeacher() {
   }
 
   const onCancelClickHandler = (e) => {
+    setModal(!modal);
     e.preventDefault();
     clearForm();
   }
 
     return (
         <>
-        <h2>Add teacher</h2>
-      <form onSubmit={onSubmitHandler}>
+        {modal ? <div className='teacher-form'> <h2 className='add-h2'>Add teacher</h2>
+      <form  onSubmit={onSubmitHandler}>
       <div>
         <label htmlFor='firstName'>Teachers first name:  </label>
           <input type="text" name='firstName' id='firstName' ref={firstNameInputRef} />
@@ -75,14 +79,15 @@ function AddTeacher() {
       </div>
       <div>
         <label htmlFor='competence'>Competencies:  </label>
-          <input type="text" name='competence' id='competence' ref={phoneInputRef} />
+          <input type="text" name='competence' id='competence' ref={compentenceInputRef} />
       </div>
       <div className='btns-container'>
-      <button>Add</button>
-      <button onClick={onCancelClickHandler}>Cancel</button>
+      <button className='btn'>Add</button>
+      <button className='btn' onClick={onCancelClickHandler}>Cancel</button>
       </div>
         
-      </form>
+      </form>  </div> : null}
+        
       </>
     )
   }

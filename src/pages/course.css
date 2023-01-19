@@ -1,0 +1,13 @@
+.infoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+h1 {
+    font-family: 'Merriweather', serif;
+}

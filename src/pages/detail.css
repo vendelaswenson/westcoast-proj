@@ -1,0 +1,14 @@
+.detail-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    margin-top: 50px;
+}
+
+.info {
+    margin-top: 40px;
+}

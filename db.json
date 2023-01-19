@@ -1,40 +1,57 @@
 {
-    "courses": [
+  "courses": [
     {
-        "name": "Js4",
-        "number": 12,
-        "length": 4,
-        "description": "cool course",
-        "startDate": "6 aug",
-        "id": 1},
-    {   
-        "name": "js3",
-        "number": 11,
-        "length": 8,
-        "description": "dope course",
-        "startDate": "4 jan",
-        "id": 2
-      }],
-
-      "teachers": [
-        {
-            "firstname": "KupongKalle",
-            "lastname": "Sandslott",
-            "socialSecNum": 199901018886,
-            "email": "kk@hotmail.com",
-            "phoneNum": "0768588585",
-            "competentencies": "js4",
-            "id": 1
-          },
-          {
-            "firstname": "Abbe",
-            "lastname": "Cool",
-            "socialSecNum": 200501012345,
-            "email": "abbe@outlook.com",
-            "phoneNum": "0768588585",
-            "competentencies": "java",
-            "id": 2
-          }
-      ]
-
-  }
+      "name": "Js4",
+      "number": 12,
+      "length": 4,
+      "description": "cool course",
+      "startDate": "6 aug",
+      "id": 1
+    },
+    {
+      "name": "js3",
+      "number": 11,
+      "length": 8,
+      "description": "dope course",
+      "startDate": "4 jan",
+      "id": 2
+    },
+    {
+      "name": "Pedro Duarte",
+      "number": "55",
+      "length": "44",
+      "description": "vfvd",
+      "startDate": "44",
+      "id": "6f736975-b8ed-4ade-bc74-29f24df4521b"
+    }
+  ],
+  "teachers": [
+    {
+      "firstname": "KupongKalle",
+      "lastname": "Sandslott",
+      "socialSecNum": 199901018886,
+      "email": "kk@hotmail.com",
+      "phoneNum": "0768588585",
+      "competencies": "js4",
+      "id": 1
+    },
+    {
+      "firstname": "Abbe",
+      "lastname": "Cool",
+      "socialSecNum": 200501012345,
+      "email": "abbe@outlook.com",
+      "phoneNum": "0768588585",
+      "competencies": "java",
+      "id": 2
+    },
+    {
+      "firstname": "Vendela",
+      "lastname": "Swenson",
+      "socialSecNum": "88585",
+      "email": "ejeehe",
+      "phoneNum": "0768959474",
+      "competencies": "ejej",
+      "id": "470d6889-ee05-4a0c-97a2-915548ac2cc9"
+    }
+  ]
+}

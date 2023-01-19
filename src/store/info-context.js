@@ -35,15 +35,15 @@ export const InfoContextProvider = (props) => {
     });
   }
 
-  // const postCourse = (teacherBody)=>{
-  //   fetch('http://localhost:3010/courses', {
-  //       method: 'POST',
-  //       headers: {
-  //       'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify(teacherBody),
-  //   });
-  // }
+  const postCourse = (courseBody)=>{
+    fetch('http://localhost:3010/courses', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(courseBody),
+    });
+  }
 
 
   return (
@@ -51,7 +51,8 @@ export const InfoContextProvider = (props) => {
       value={{
         teachers,
         courses,
-        postTeacher
+        postTeacher,
+        postCourse
       }}
     >
       {props.children}

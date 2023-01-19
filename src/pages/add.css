@@ -1,0 +1,9 @@
+.modal-container {
+    margin-top: -110%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    backdrop-filter: blur(15px);
+
+}

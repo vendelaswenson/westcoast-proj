@@ -1,6 +1,7 @@
 import CourseList from "../components/courseList/CourseList";
 import InfoContext from '../store/info-context';
 import React, { useContext} from 'react'
+import './course.css'
 
 const CoursePage = () => {
   const context = useContext(InfoContext);

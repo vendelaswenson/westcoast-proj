@@ -5,6 +5,10 @@
     padding: 20px;
     position: sticky;
     z-index: 10;
+    width: 100%;
+    align-items: center;
+    background: rgb(226, 226, 226);
+    margin-top: -10px;
 }
 
 .listelement {

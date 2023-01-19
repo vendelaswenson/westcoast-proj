@@ -4,10 +4,10 @@ import MainHeader from './components/MainHeader';
 import TeacherDetail from './pages/TeacherDetail';
 import CourseDetail from './pages/CourseDetail';
 import ContactUs from './pages/ContactUs';
-import AddPage from './pages/AddPage';
 import { Routes, Route } from 'react-router-dom'
 import CoursePage from './pages/CoursePage';
 import TeacherPage from './pages/TeacherPage';
+
 
 function App() {
   return (
@@ -22,7 +22,6 @@ function App() {
           <Route path="/contact" element={<ContactUs />}></Route>
           <Route path="/courselist" element={<CoursePage />}></Route>
           <Route path="/teacherlist" element={<TeacherPage />}></Route>
-          <Route path="/add" element={<AddPage />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </main>
