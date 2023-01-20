@@ -17,7 +17,9 @@ describe("Component", () => {
 
   it("First name should be in the document", () => {
     render(<TeacherList />, {wrapper: MemoryRouter});
-    const name = screen.getByTestId("name-element");
-    expect(name).toBeInTheDocument();
+    const firstName = screen.getByTestId("name-element");
+    const lastName = screen.getByTestId("lastname-element");
+    expect(firstName).toBeInTheDocument();
+    expect(lastName).toBeInTheDocument();
 })
 });

@@ -7,7 +7,7 @@ const TeacherList  =  ({data}) => {
     <div className='courseContainer'>
         <Link state={data} to={`/teacher/${data?.id}`}>
       <h2 data-testid="name-element">Teacher firstname: {data?.firstname}</h2>
-      <h3>Teacher lastname: {data?.lastname}</h3>
+      <h3 data-testid="lastname-element">Teacher lastname: {data?.lastname}</h3>
     </Link>
     </div>
   

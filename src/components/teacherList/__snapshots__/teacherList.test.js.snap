@@ -16,7 +16,9 @@ Object {
           >
             Teacher firstname: 
           </h2>
-          <h3>
+          <h3
+            data-testid="lastname-element"
+          >
             Teacher lastname: 
           </h3>
         </a>
@@ -35,7 +37,9 @@ Object {
         >
           Teacher firstname: 
         </h2>
-        <h3>
+        <h3
+          data-testid="lastname-element"
+        >
           Teacher lastname: 
         </h3>
       </a>

@@ -4,8 +4,6 @@ import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import '@testing-library/jest-dom/extend-expect';
 
-
-
 afterEach(() => {
     cleanup(); 
 })
@@ -17,9 +15,14 @@ describe("Component", () => {
     expect(utils).toBeTruthy();
   });
 
-  it("Length label should be in the document", () => {
+  it("Labels should be in the document", () => {
     render(<AddCourse />, {wrapper: MemoryRouter});
-    const inputNode = screen.getByLabelText('Length:')
-    expect(inputNode).toBeInTheDocument();
+    const length = screen.getByLabelText('Length:')
+    const date = screen.getByLabelText('Start date:')
+    const name = screen.getByLabelText('Course name:')
+   
+    expect(length).toBeInTheDocument();
+    expect(date).toBeInTheDocument();
+    expect(name).toBeInTheDocument();
   })
 });

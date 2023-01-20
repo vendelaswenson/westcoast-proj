@@ -17,5 +17,6 @@ describe("Component", () => {
   it("Name should be spelled correctly", async () => {
     render(<CourseList />, {wrapper: MemoryRouter});
     expect('name').toMatch(/am/);
+    expect('number').toMatch(/umb/);
   });
 });
