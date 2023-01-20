@@ -1,6 +1,6 @@
 .infoContainer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -10,4 +10,10 @@ a {
 }
 h1 {
     font-family: 'Merriweather', serif;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

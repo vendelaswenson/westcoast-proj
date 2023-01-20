@@ -55,27 +55,27 @@ function AddTeacher() {
         {modal ? <div className='teacher-form'> <h2 className='add-h2'>Add teacher</h2>
       <form  onSubmit={onSubmitHandler}>
       <div>
-        <label htmlFor='firstName'>Teachers first name:  </label>
+        <label htmlFor='firstName'>Teachers first name:  </label><br/>
           <input type="text" name='firstName' id='firstName' ref={firstNameInputRef} />
       </div>
       <div>
-        <label htmlFor='lastName'>Teachers last name:  </label>
+        <label htmlFor='lastName'>Teachers last name:  </label><br/>
           <input type="text" name='lastName' id='lastName' ref={lastNameInputRef} />
       </div>
       <div>
-        <label htmlFor='socSecNum'>Social security number:  </label>
+        <label htmlFor='socSecNum'>Social security number:  </label><br/>
           <input type="text" name='socSecNum' id='socSecNum' ref={socSecInputRef} />
       </div>
       <div>
-        <label htmlFor='email'>E-mail:  </label>
+        <label htmlFor='email'>E-mail:  </label><br/>
           <input type="text" name='email' id='email' ref={emailInputRef} />
       </div>
       <div>
-        <label htmlFor='phoneNum'>Phone number:  </label>
+        <label htmlFor='phoneNum'>Phone number:  </label><br/>
           <input type="text" name='phoneNum' id='phoneNum' ref={phoneInputRef} />
       </div>
       <div>
-        <label htmlFor='competence'>Competencies:  </label>
+        <label htmlFor='competence'>Competencies:  </label><br/>
           <input type="text" name='competence' id='competence' ref={compentenceInputRef} />
       </div>
       <div className='btns-container'>

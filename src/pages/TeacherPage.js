@@ -6,9 +6,12 @@ import './styles/teacher.css'
 const TeacherPage = () => {
     const context = useContext(InfoContext);
   return (
-    <div>
+    <>
+    <div className="h1-container">
+     <h1>Teachers</h1>
+     </div>
+    <div className="centered">
     <div className="infoContainer">
-      <h1>Teachers</h1>
       {
       context.teachers.map((teacher,i) =>{
          return <TeacherList data={teacher} key={i} />
@@ -16,6 +19,7 @@ const TeacherPage = () => {
       }
     </div>
   </div>
+  </>
   );
 };
 

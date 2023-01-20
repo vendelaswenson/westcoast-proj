@@ -9,7 +9,7 @@
     align-items: center;
     background: rgb(226, 226, 226);
     margin-top: -10px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .listelement {

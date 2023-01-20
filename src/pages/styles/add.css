@@ -1,5 +1,7 @@
 .modal-container {
-    margin-top: -70%;
+    position: absolute;
+    width: 100%;
+    top:0px;
     display: flex;
     align-items: center;
     flex-direction: column;

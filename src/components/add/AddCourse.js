@@ -38,9 +38,7 @@ function AddCourse() {
     const courseBody = {
       name, number, length, description, startDate, id 
     }
-
     context.postCourse(courseBody)
-    
   }
 
   const onCancelClickHandler = (e) => {
@@ -54,23 +52,23 @@ function AddCourse() {
       {modal ? <div className='course-container'> <h2 className='add-h2'>Add Course</h2>
     <form onSubmit={onSubmitHandler}>
     <div>
-      <label htmlFor='name'>Course name:  </label>
+      <label htmlFor='name'>Course name:  </label> <br/>
         <input type="text" name='name' id='name' ref={nameInputRef} />
     </div>
     <div>
-      <label htmlFor='number'>Course number:  </label>
+      <label htmlFor='number'>Course number:  </label><br/>
         <input type="text" name='number' id='number' ref={numberInputRef} />
     </div>
     <div>
-      <label htmlFor='length'>Length:  </label>
+      <label htmlFor='length'>Length:  </label><br/>
         <input type="text" name='length' id='length' ref={lengthInputRef} />
     </div>
     <div>
-      <label htmlFor='description'>Description:  </label>
+      <label htmlFor='description'>Description:  </label><br/>
         <input type="text" name='description' id='description' ref={descriptionInputRef} />
     </div>
     <div>
-      <label htmlFor='startDate'>Start date:  </label>
+      <label htmlFor='startDate'>Start date:  </label><br/>
         <input type="text" name='startDate' id='startDate' ref={dateInputRef} />
     </div>
     <div className='btns-container'>

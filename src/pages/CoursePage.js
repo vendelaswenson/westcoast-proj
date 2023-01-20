@@ -7,9 +7,12 @@ const CoursePage = () => {
   const context = useContext(InfoContext);
 
     return (
-  <div>
+      <>
+      <div>
+      <h1 className="h1-container">Courses</h1>
+      </div>
+  <div className="centered">
     <div className="infoContainer">
-      <h1>Courses</h1>
       {
       context.courses.map((course,i) =>{
          return <CourseList data={course} key={i} />
@@ -17,6 +20,7 @@ const CoursePage = () => {
       }
     </div>
   </div>
+  </>
 )
 }
 
