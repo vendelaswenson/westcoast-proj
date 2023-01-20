@@ -1,7 +1,8 @@
 import { useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import InfoContext from '../../store/info-context';
-import React, { useContext, useState} from 'react'
+import React, { useContext, useState} from 'react';
+
 
 
 function AddCourse() {
@@ -73,7 +74,7 @@ function AddCourse() {
         <input type="text" name='startDate' id='startDate' ref={dateInputRef} />
     </div>
     <div className='btns-container'>
-    <button className='btn'>Add</button>
+    <button data-testid="button" className='btn'>Add</button>
     <button className='btn' onClick={onCancelClickHandler}>Cancel</button>
     </div>
       

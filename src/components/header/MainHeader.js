@@ -15,7 +15,7 @@ const MainHeader = () => {
 
   return (
     <header>
-      <nav>
+      <nav className="list">
         <ul className="listelements">
           <li className="listelement">
             <Link to="/landingpage">Homepage</Link>

@@ -7,7 +7,6 @@ import './addcomp.css';
 function AddTeacher() {
 
   const [modal, setModal] = useState(true);
-
   const context = useContext(InfoContext);
 
   const firstNameInputRef = useRef();
@@ -80,7 +79,7 @@ function AddTeacher() {
           <input type="text" name='competence' id='competence' ref={compentenceInputRef} />
       </div>
       <div className='btns-container'>
-      <button className='btn'>Add</button>
+      <button data-testid="add-word-button" className='btn'>Add</button>
       <button className='btn' onClick={onCancelClickHandler}>Cancel</button>
       </div>
         

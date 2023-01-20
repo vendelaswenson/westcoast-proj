@@ -80,6 +80,7 @@ Object {
           >
             <button
               class="btn"
+              data-testid="button"
             >
               Add
             </button>
@@ -170,6 +171,7 @@ Object {
         >
           <button
             class="btn"
+            data-testid="button"
           >
             Add
           </button>

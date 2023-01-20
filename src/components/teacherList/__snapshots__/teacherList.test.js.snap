@@ -11,7 +11,9 @@ Object {
         <a
           href="/teacher/undefined"
         >
-          <h2>
+          <h2
+            data-testid="name-element"
+          >
             Teacher firstname: 
           </h2>
           <h3>
@@ -28,7 +30,9 @@ Object {
       <a
         href="/teacher/undefined"
       >
-        <h2>
+        <h2
+          data-testid="name-element"
+        >
           Teacher firstname: 
         </h2>
         <h3>

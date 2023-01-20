@@ -92,6 +92,7 @@ Object {
           >
             <button
               class="btn"
+              data-testid="add-word-button"
             >
               Add
             </button>
@@ -194,6 +195,7 @@ Object {
         >
           <button
             class="btn"
+            data-testid="add-word-button"
           >
             Add
           </button>

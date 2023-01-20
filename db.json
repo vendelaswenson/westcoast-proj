@@ -23,6 +23,14 @@
       "description": "vfvd",
       "startDate": "44",
       "id": "6f736975-b8ed-4ade-bc74-29f24df4521b"
+    },
+    {
+      "name": "hoho",
+      "number": "55",
+      "length": "ee",
+      "description": "hhhh",
+      "startDate": "33",
+      "id": "80268fdf-523e-460a-9bbb-517b0ddd1fbc"
     }
   ],
   "teachers": [
@@ -52,6 +60,15 @@
       "phoneNum": "0768959474",
       "competencies": "ejej",
       "id": "470d6889-ee05-4a0c-97a2-915548ac2cc9"
+    },
+    {
+      "firstname": "malin",
+      "lastname": "hoho",
+      "socialSecNum": "88585",
+      "email": "vendelaswenson@hotmail.com",
+      "phoneNum": "0768959474",
+      "competencies": "ejej",
+      "id": "e62e4020-4755-4b62-be9e-e71bef646e86"
     }
   ]
 }

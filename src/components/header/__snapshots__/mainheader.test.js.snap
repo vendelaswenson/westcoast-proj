@@ -6,7 +6,9 @@ Object {
   "baseElement": <body>
     <div>
       <header>
-        <nav>
+        <nav
+          class="list"
+        >
           <ul
             class="listelements"
           >
@@ -58,7 +60,9 @@ Object {
   </body>,
   "container": <div>
     <header>
-      <nav>
+      <nav
+        class="list"
+      >
         <ul
           class="listelements"
         >
